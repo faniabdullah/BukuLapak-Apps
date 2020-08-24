@@ -1,0 +1,53 @@
+{
+    "name": "Premier League",
+    "gcm_sender_id": "952877957561",
+    "short_name": "PremierLeague",
+    "description": "A litte information Premier Leaguea",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#37003c",
+    "theme_color": "#37003c",
+    "icons": [
+       
+        {
+            "src": "images/logo72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+          },
+        {
+            "src": "images/logo512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
