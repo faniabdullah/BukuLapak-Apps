@@ -1,2 +1,2 @@
-# dicodingAcademy-PWA-submission1
+# BukuLapak
 Dicoding Academy Submission 1 , BukuLapak
