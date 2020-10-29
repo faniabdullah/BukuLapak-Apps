@@ -1,50 +1,110 @@
 <!DOCTYPE html>
-  <html>
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier League</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>BukuLapak</title>
+
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/logo72x72.png">
-    <link rel="apple-touch-icon" sizes="96x96" href="/images/logo96x96.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/logo152x152.png">
-    <link rel="icon" type="image/png" href="/images/logo72x72.png" sizes="72x72">
-    <link rel="icon" type="image/png" href="/images/logo96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/images/logo192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/logo192x192.png">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#37003c"/>
-    </head>
-    <body>
-        <nav class="nav-extended white navigation">
-            <div class="nav-wrapper container">
-              <a href="#" class="brand-logo">
-                <img class="logo logo-apps" src="images/logo.png">
-              </a>
-              <ul class="topnav right hide-on-med-and-down">
+    <link rel="apple-touch-icon" href="images/logo512x512.png">
+    <meta name="theme-color" content="#4db6ac"/>
+</head>
+<body>
+    <header>
+         <!-- Navigasi -->
+              <div class="navbar-fixed">
+              <nav class="white">
+                  <div class="nav-wrapper container ">
+                  <a href="#" class="brand-logo black-text text-darken-2">BukuLapak</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text text-darken-2"><i class="material-icons">menu</i></a>
+                  <ul class="topnav right hide-on-med-and-down">
+                      
+                  </ul>
+                  </div>
+              </nav>
+              </div>
+              <ul class="sidenav" id="mobile-demo"></ul>
+        <!-- Akhir Navigasi -->
+        
+            <figure>
+                <div class="shapePositionLeft">
+                <div class="shapeCircleLeft"></div>
+                </div>
+                <div class="shapePositionCenter">
+                    <div class="shapeCircleCenter"></div>
+                </div>
+                <div class="shapePositionRight">
+                    <div class="shapeCircleRight"></div>
+                </div>
+            </figure>
+
+    </header>
+    <main>
+        <div class="container" id="body-content"></div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="page-footer  grey lighten-5">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="black-text">BukuLapak</h5>
+              <p class="black-text text-lighten-4">Buku Lapak didirikan dengan niat untuk terlibat dalam memberikan bacaan yang sehat, kritis, dan menghibur. Kami ingin menghadirkan rumah penerbitan yang dapat berkontribusi bagi peningkatan dunia literasi.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="black-text">Subscribe & Follow us</h5>
+              <ul >
+                <li>
+                  <a class="black-text text-lighten-3" target="blank" href="#" >BukuLapak<i class="material-icons left">subscriptions</i></a>
+                </li>
+                <li style="clear: both; margin-top: 10px;">
+                    <a class="black-text text-lighten-3" target="blank" href="#" >emailMe@bukulapak.com<i class="material-icons left">contact_mail</i></a>
+                </li>
+                <li style="clear: both; margin-top: 10px;">
+                  <a class="black-text text-lighten-3" target="blank"  > <a class="black-text" target="blank" href="https://www.instagram.com/fabduul/" >Twitter /
+                  </a>
+                  <a class="black-text text-lighten-3" target="blank" href="https://www.instagram.com/fabduul/" > Instagram / </a>
+                  <a class="black-text text-lighten-3" target="blank" href="https://www.instagram.com/fabduul/" > Facebook .</a>
+                    <i class="material-icons black-text left">more</i></a>
+              </li>
               </ul>
             </div>
-        </nav>
-          <div class="nav-bottom-mobile navigation  hide-on-large-only container row"></div>
-        <main>
-            <div class="container viewHome">
-              <div class="header-home center">
-                <img class="logo-header logo-apps" src="images/logo.png">
-                <h5>a litte informasion for premier league football england </h5>
-                <h5>if you want more information, click on this site</h5>
-                <a href="https://www.premierleague.com/"><i class="material-icons sites black-text">launch</i></a>
-              </div>
-            <p class="center italic">Standings Premier league</p>
-            </div> 
-            
-            <div class="container" id="body-content">
-              
-              </div>
           </div>
-        </main>
-        <script src="js/data/idb.js"></script>
-        <script src="js/materialize.min.js"></script>
-        <script src="apps.js" type="module"></script>
-    </body>
-  </html>
+        </div>
+
+        <div class="footer-copyright ">
+          <div class="container black-text">
+          © 2020 Fani Abdullah Dicoding Academy
+          <a class="black-text right" href="#">@fabduul</a>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+      
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/storage-cart.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // REGISTER SERVICE WORKER
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', function() {
+ navigator.serviceWorker.register('/service-worker.js')
+ .then(function() {
+   console.log('Pendaftaran ServiceWorker berhasil');
+ })
+ .catch(function(){
+   console.log('Pendaftaran ServiceWorker gagal');
+ });
+})
+} else {
+console.log("ServiceWorker belum didukung browser ini.")
+}
+  </script>
+    
+</body>
+</html>

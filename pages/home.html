@@ -1,9 +1,228 @@
 
-<ul id="tabs-swipe-demo" class="tabs center card-dark-mode " style="margin-top: 10px; ">
-    <li class="tab col s3  "><a  class=" black-text text-darken-2" href="#standing-total">Total</a></li>
-    <li class="tab col s3 "><a  class=" black-text text-darken-2" href="#standing-home">Home</a></li>
-    <li class="tab col s3 "><a  class=" black-text text-darken-2" href="#standing-away">Away</a></li>
- </ul>
-<div id="standing-total" class="col s12 " style="padding: 5px;"></div>
-<div id="standing-home" class="col s12 " style="padding: 5px;"></div>
-<div id="standing-away" class="col s12 " style="padding: 5px;"></div>
+<h4 id="Hello"></h4>
+<h5 class="left flow-text ju">BukuLapak adalah anak perusahaan Kompas Buku yang menyediakan jaringan toko buku dengan nama Toko BukuLapak di beberapa kota di Indonesia.</h5>
+<p> <b>BukuLapak</b> juga hadir untuk memberi ruang bagi tempat berkarya anak-anak muda Indonesia. Kami membuka kesempatan yang lebar untuk penulis-penulis baru dalam mempublikasikan buah pikir dan imajinasi mereka dalam beragam karya fiksi maupun nonfiksi.</p>
+
+<a href="#learnmore" onclick="loadPage('learnmore')" class="waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>Learn More</a>
+<div class="Line teal"></div>
+<nav class="white">
+    <div class="nav-wrapper">
+        <div class="input-field black-text text-darken-2">
+          <input id="search" placeholder="Search Here" type="search" required>
+          <label class="label-icon black-text text-darken-2" for="search"><i class="material-icons black-text text-darken-2">search</i></label>
+          <i class="material-icons ">close</i>
+        </div>
+    </div>
+
+  </nav>
+
+<div class="row">
+    <div class="col s12 m3">
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_list</i>Category</div>
+              <div class="collapsible-body">
+                <div class="collection"><span>
+                  <a href="#" class="collection-item">Buku Fiksi</a>
+                  <a href="#" class="collection-item"> Buku NonFiksi</a>
+                </span>
+                 
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">mode_edit</i>Creator</div>
+              <div class="collapsible-body"> <div class="collection">
+                <a href="#" class="collection-item">Mark Manson</a>
+                <a href="#" class="collection-item "> Rintik Sendu</a>
+                
+                <a href="#" class="collection-item "> Claudia Sabrina</a>
+              </div></div>
+            </li>
+            
+          </ul>
+    </div>
+
+    <div class="col s12 m9">
+        <div class="row" >
+   
+            <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img id="book1" class="activator featured-image" src="images/book1.jpeg">
+                        </div>
+                        <div class="card-content">
+                          <span id="product-name1" class="card-title activator grey-text text-darken-4">Segala-galanya Ambyar<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#">Add to wishlish</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Segala-galanya Ambyar<i class="material-icons right">close</i></span>
+                            <!-- product -->
+                          <p id="description-book1">Ya, dunia ini memang kacau, dunia ini memang ambyar, tapi itu karena Anda tidak sadar bahwa harapan Anda terlalu disilaukan oleh keinginan-keinginan Anda sendiri yang tidak masuk akal</p>
+                           <table>
+                            <tr>
+                              <td>Penulis</td>
+                              <td>:</td>
+                              <td id="creator-book1">MarkManson</td>
+                            </tr>
+                            <tr>
+                              <td>Harga</td>
+                              <td>:</td>
+                              <td id="price-book1">Rp. 92.000</td>
+                            </tr>
+                            <tr>
+                              <td>Qty </td>
+                              <td>:</td>
+                              <td id="qty1">1</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td>
+                                <a style="cursor: pointer;" onclick="plus(1)"><i class="small material-icons">add</i></a>
+                                <a style="cursor: pointer;" onclick="min(1)"><i class="small material-icons">remove</i></a></td>
+                            </tr>
+                          </table>
+                          
+                                <a onclick="addToCart(1)" style="margin-top: 10px;" class="right waves-effect waves-light btn-small"><i class="material-icons left">add_shopping_cart</i>Add To Cart</a>
+                         <!-- end product -->
+                        </div>
+                      </div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img id="book2" class="activator featured-image" src="images/book2.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span id="product-name2" class="card-title activator grey-text text-darken-4">Seni Untuk Bersikap Bodo Amat<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Add to wishlish</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Seni Untuk Bersikap Bodo Amat<i class="material-icons right">close</i></span>
+                        <!-- product -->
+                        <p id="description-book2">Dalam hidup ini, kita hanya punya kepedulian dalam jumlah yang terbatas. Makanya, Anda harus bijaksana dalam menentukan kepedulian Anda.” Manson menciptakan momen perbincangan yang serius dan mendalam, dibungkus dengan cerita-cerita yang menghibur dan “kekinian”, serta humor yang cadas</p>
+                        <table>
+                         <tr>
+                           <td>Penulis</td>
+                           <td>:</td>
+                           <td id="creator-book2">MarkManson</td>
+                         </tr>
+                         <tr>
+                           <td>Harga</td>
+                           <td>:</td>
+                           <td id="price-book2">Rp. 112.000</td>
+                         </tr>
+                         <tr>
+                           <td>Qty </td>
+                           <td>:</td>
+                           <td id="qty2">1</td>
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td></td>
+                           <td>
+                             <a style="cursor: pointer;" onclick="plus(2)"><i class="small material-icons">add</i></a>
+                             <a style="cursor: pointer;" onclick="min(2)"><i class="small material-icons">remove</i></a></td>
+                         </tr>
+                       </table>
+                       
+                             <a onclick="addToCart(2)" style="margin-top: 10px;" class="right waves-effect waves-light btn-small"><i class="material-icons left">add_shopping_cart</i>Add To Cart</a>
+                      <!-- end product -->
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img id="book3" class="activator featured-image" src="images/book3.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span id="product-name3" class="card-title activator grey-text text-darken-4">Memahami Wanita<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Add to wishlish</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Memahami Wanita<i class="material-icons right">close</i></span>
+                        <!-- product -->
+                        <p id="description-book3">Wanita adalah makhluk yang emosional. Mungkin pria tidak pernah mengerti mengapa suatu hal masalah besar untuk seorang wanita. Padahal sesuatu itu tidak penting bagi pria. Pria tidak mengubah kondisi tersebut.</p>
+                        <table>
+                         <tr>
+                           <td>Penulis</td>
+                           <td>:</td>
+                           <td id="creator-book3">Claudia Sabrina</td>
+                         </tr>
+                         <tr>
+                           <td>Harga</td>
+                           <td>:</td>
+                           <td id="price-book3">Rp. 202.000</td>
+                         </tr>
+                         <tr>
+                           <td>Qty </td>
+                           <td>:</td>
+                           <td id="qty3">1</td>
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td></td>
+                           <td>
+                             <a style="cursor: pointer;" onclick="plus(3)"><i class="small material-icons">add</i></a>
+                             <a style="cursor: pointer;" onclick="min(3)"><i class="small material-icons">remove</i></a></td>
+                         </tr>
+                       </table>
+                       
+                             <a onclick="addToCart(3)" style="margin-top: 10px;" class="right waves-effect waves-light btn-small"><i class="material-icons left">add_shopping_cart</i>Add To Cart</a>
+                      <!-- end product -->
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img  id="book4" class="activator featured-image" src="images/book4.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span id="product-name4" class="card-title activator grey-text text-darken-4">Gezz & Ann<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">Add to wishlish</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Gezz & Ann<i class="material-icons right">close</i></span>
+                       <!-- product -->
+                       <p id="description-book4">"Untuk peri kecilku,Ann, dari kecil, aku susah sekali bicara banyak. Namun, sejak bertemu denganmu, aku ingin bisa banyak berkata-kata, khususnya saat bersamamu.Aku tahu, aku jenis orang yang sedikit rumit. Namun, percayalah Ann, aku berusaha sekeras mungkin untuk bisa membuatmu memahamiku, walaupun aku tahu itu sulit.</p>
+                       <table>
+                        <tr>
+                          <td>Penulis</td>
+                          <td>:</td>
+                          <td id="creator-book4">Rintik Sendu</td>
+                        </tr>
+                        <tr>
+                          <td>Harga</td>
+                          <td>:</td>
+                          <td id="price-book4">Rp. 62.000</td>
+                        </tr>
+                        <tr>
+                          <td>Qty </td>
+                          <td>:</td>
+                          <td id="qty4">1</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <a style="cursor: pointer;" onclick="plus(4)"><i class="small material-icons">add</i></a>
+                            <a style="cursor: pointer;" onclick="min(4)"><i class="small material-icons">remove</i></a></td>
+                        </tr>
+                      </table>
+                      
+                            <a onclick="addToCart(4)" style="margin-top: 10px;" class="right waves-effect waves-light btn-small"><i class="material-icons left">add_shopping_cart</i>Add To Cart</a>
+                     <!-- end product -->
+                    </div>
+                  </div>
+                  <a class="right" href="">Lihat Semua</a>
+            </div>
+            
+          </div>
+
+    </div>
+</div>

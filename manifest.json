@@ -1,12 +1,11 @@
 {
-    "name": "Premier League",
-    "gcm_sender_id": "952877957561",
-    "short_name": "PremierLeague",
-    "description": "A litte information Premier Leaguea",
+    "name": "Buku Lapak",
+    "short_name": "BukuLapak",
+    "description": "Aplikasi BukuLapak",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#37003c",
-    "theme_color": "#37003c",
+    "background_color": "#4db6ac",
+    "theme_color": "#26a69a",
     "icons": [
        
         {
